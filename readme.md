@@ -21,7 +21,7 @@
 
 ## Hosted webpage link
 
-[Static Webpage Templete - 7](https://static-webpage-templete-06.netlify.app/)
+[Static Webpage Templete - 7](https://static-webpage-templete-07.netlify.app/)
 
 ## My learnings
 
