@@ -1,0 +1,33 @@
+#navContainer {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  align-items: center;
+}
+
+.navLeft {
+  margin: 0 100px 0 100px;
+}
+
+.navMid {
+  flex: 1;
+  margin: 0 100px 0 200px;
+}
+
+.navMid .nav-mid-item {
+  display: inline-block;
+  margin-right: 50px;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.navMid .nav-mid-item:hover {
+  color: #fe5e35;
+  font-weight: 500;
+}
+
+.navRight {
+  cursor: pointer;
+}
