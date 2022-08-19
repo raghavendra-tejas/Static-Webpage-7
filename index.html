@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css\mediaQuaery.css" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,39 +29,35 @@
   <body>
     <!-- Navigation Section -->
     <nav id="navContainer">
-      <div class="navLeft">
-        <img src="./images/logo.svg" alt="logo" />
-      </div>
-      <div class="navMid">
-        <h5 class="nav-mid-item active-item">Home</h5>
-        <h5 class="nav-mid-item">Product</h5>
-        <h5 class="nav-mid-item">Price</h5>
-        <h5 class="nav-mid-item">About</h5>
-      </div>
-      <div class="navRight">
-        <img src="./images/actions.svg" alt="actions" />
-      </div>
+      <img class="logo" src="./images/logo.svg" alt="logo" />
+      <ul id="menuList">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Price</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <img class="menu-icon" src="images\menu-icon.png" alt="menu icon" />
     </nav>
     <!-- Main section -->
     <div id="main-section">
       <div class="left-section">
-        <h3 class="new-product">
+        <h3>
           New Product
           <img src="./images/circles.svg" alt="circles" />
         </h3>
-        <h1 class="heading">Wireless Headphone</h1>
+        <h1>Wireless Headphone</h1>
         <div class="sub-headlines">
           <div class="sub-headline">
             <img src="./images/plus.svg" alt="plus" />
-            <p class="sub-paragraph-1">Clear Sound</p>
+            <p class="sub-paragraph">Clear Sound</p>
           </div>
           <div class="sub-headline">
             <img src="./images/plus.svg" alt="plus" />
-            <p class="sub-paragraph-2">FM Function</p>
+            <p class="sub-paragraph">FM Function</p>
           </div>
           <div class="sub-headline">
             <img src="./images/plus.svg" alt="plus" />
-            <p class="sub-paragraph-3">Up To 11 Hours Playtime</p>
+            <p class="sub-paragraph">Up To 11 Hours Playtime</p>
           </div>
         </div>
         <p class="text">
@@ -77,23 +74,23 @@
       </div>
       <div class="right-section">
         <div class="right-section-main">
-          <img
-            class="headphone-div"
-            src="./images/headphones.jpg"
-            alt="headphone"
-          />
-          <img class="discount" src="./images/discount.svg" alt="discount" />
-          <div class="discount-content">
+          <div class="headphone-div">
+            <img src="./images/headphones.jpg" alt="headphone" />
+          </div>
+          <div class="discount">
+            <img src="./images/discount.svg" alt="discount" />
             <h4>Discount</h4>
             <h1>50%</h1>
           </div>
+          <div class="dots">
+            <span class="dot yellow-dot"></span>
+            <span class="dot tomato-dot"></span>
+            <span class="dot black-dot"></span>
+          </div>
+          <div class="addToCart">
+            <button>Add to chart</button>
+          </div>
         </div>
-        <div class="dots">
-          <span class="dot yellow-dot"></span>
-          <span class="dot tomato-dot"></span>
-          <span class="dot black-dot"></span>
-        </div>
-        <button class="action-btn">Add to chart</button>
       </div>
     </div>
   </body>

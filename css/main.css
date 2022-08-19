@@ -1,25 +1,32 @@
 #main-section {
-  margin-left: 100px;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 0;
 }
+
+
+/* Left Section */
 
 .left-section {
-  flex: 1;
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 50px;
+  /* background-color: aquamarine; */
 }
 
-.left-section .new-product {
+.left-section h3 img {
   font-family: "Fredoka";
   font-weight: 400;
   font-size: x-large;
   margin-top: 10px;
 }
 
-.new-product img {
+.left-section img {
   width: 30px;
 }
 
-.left-section .heading {
+.left-section h1 {
   font-family: "Fredoka";
   font-size: 70px;
   margin-top: 20px;
@@ -46,33 +53,25 @@
   margin-bottom: 10px;
 }
 
-.sub-headline .sub-paragraph-1 {
+.sub-headline .sub-paragraph {
   position: absolute;
-  top: 6px;
-  left: 40px;
-}
-
-.sub-headline .sub-paragraph-2 {
-  position: absolute;
-  top: 6px;
-  left: 40px;
-}
-
-.sub-headline .sub-paragraph-3 {
-  position: absolute;
-  top: 6px;
+  top: 11px;
   left: 40px;
 }
 
 .text {
   margin-top: 30px;
   font-family: "Poppins";
-  font-weight: 100;
+  font-weight: 400;
   font-size: xx-small;
 }
 
 .action-btns {
-  margin: 50px 0;
+  display: flex;
+  /* background-color: steelblue; */
+  height: 100px;
+  align-items: center;
+  justify-content: center;
 }
 
 .action-btns .action-btn {
@@ -84,91 +83,100 @@
   background-color: #fe5e35;
   color: #ffffff;
   font-size: x-small;
-}
-
-.action-btns .bt1 {
   margin-right: 20px;
 }
 
 
+/* Right Section */
+
 .right-section {
-  flex: 1;
   position: relative;
+  flex-basis: 60%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-right: 50px;
+  /* background-color: burlywood; */
 }
 
-
-.right-section-main .headphone-div {
-  position: absolute;
-  z-index: -10;
+.headphone-div img {
+  z-index: 10;
   top: 0;
-  margin-top: -50px;
+  align-items: center;
   width: 500px;
   height: 450px;
 }
 
-.right-section-main .discount {
-  width: 150px;
+.discount {
   position: absolute;
-  z-index: -8;
+  margin: -420px 0 0 0;
+}
+
+.discount img {
+  width: 130px;
+  position: absolute;
+  z-index: 15;
   top: 200px;
   left: -50px;
 }
 
-.right-section-main .discount-content h4 {
+.discount h4 {
   position: absolute;
-  font-family: "Poppins";
-  top: 240px;
-  left: -10px;
+  top: 235px;
+  left: -13px;
   font-size: x-small;
   color: #ffffff;
+  z-index: 16;
 }
 
-.right-section-main .discount-content h1 {
+.discount h1 {
   position: absolute;
   font-family: "Poppins";
-  top: 255px;
-  left: -21px;
-  font-size: 45px;
+  top: 250px;
+  left: -15px;
+  font-size: 35px;
   color: #ffffff;
-}
-
-.dots .dot{
-  /* position: absolute; */
-  z-index: -6;
-  margin: 410px 20px 0 0;
-  
+  z-index: 17;
 }
 
 .dots {
-  margin-left: 190px;
+  display: flex;
+  /* background-color: turquoise; */
+  align-items: center;
+  height: 50px;
+  justify-content: center;
+}
+
+.dots .dot{
+  z-index: 30;
+  margin: 0 10px 0 10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 .dots .yellow-dot {
-  height: 20px;
-  width: 20px;
   background-color: #fbd104;
-  border-radius: 50%;
-  display: inline-block;
 }
 
 .dots .tomato-dot {
-  height: 20px;
-  width: 20px;
   background-color: #fe5e35;
-  border-radius: 50%;
-  display: inline-block;
-}
+} 
 
 .dots .black-dot {
-  height: 20px;
-  width: 20px;
-  background-color: #000000;
-  border-radius: 50%;
-  display: inline-block;
+  background-color: #000;
 }
 
-.right-section .action-btn {
-  margin: 30px 0 0 170px;
+.addToCart {
+  /* background-color: teal; */
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  align-items: center;
+}
+
+.addToCart button {
   height: 40px;
   width: 150px;
   border-radius: 20px;
@@ -177,4 +185,5 @@
   background-color: #fe5e35;
   color: #ffffff;
   font-size: x-small;
+  display: block;
 }
